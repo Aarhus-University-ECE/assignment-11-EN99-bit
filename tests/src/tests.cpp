@@ -14,13 +14,17 @@ extern "C"
 TEST_CASE("sumtail")
 {
     // Add the tests for excercise 3 "sumtail" function here. Use "REQUIRE()" statement to check. 
-    REQUIRE(1==0);
+    REQUIRE(sumtail(1,0)==1); // sum(1) must be 1: Tilægger tilfældige værdier ud fra de argumenter som sumtail tager
+    REQUIRE(sumtail(10,0)==55); //sum(10) = 1+2+3+4+5+6+7+8+9+10 = 55
+    REQUIRE(sumtail(20,0)==210); //sum(20)= 1+2+3+4+5+6+7+8+9+10...+20 = 210
 }
 
 TEST_CASE("sumwhile")
 {
     // Add the tests for excercise 3 "sumwhile" function here. Use "REQUIRE()" statement to check. 
-    REQUIRE(1==0);
+    REQUIRE(sumwhile(1)==1); //sum(1) must be 1
+    REQUIRE(sumwhile(10)==55);
+    REQUIRE(sumwhile(20)==210);
 }
 
 TEST_CASE("sumn")
@@ -33,7 +37,11 @@ TEST_CASE("sumn")
 TEST_CASE("fib")
 {
    // Add the tests for excercise 4 "fib" function here. Use "REQUIRE()" statement to check. 
-    REQUIRE(1==0);
+    REQUIRE(fib(10,1,1)==55);
+    REQUIRE(fib(1,1,1)==1);
+
+    
+    
 }
 
 
